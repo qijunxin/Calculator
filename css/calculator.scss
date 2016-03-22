@@ -1,0 +1,113 @@
+//reset and body
+*{
+	box-sizing:border-box;
+}
+html,body{
+	height:100%;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+//caculator
+.calculator{
+	position: absolute;
+	width: 300px;
+	top:50%;
+	left: 50%;
+	z-index: 1;
+	transform:translate(-50%,-50%);
+	background: linear-gradient(135deg,#00CB58,#3faf82);
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+//screen
+.screen{
+	position: relative;
+	background: #fff;
+	padding: 15px 25px;
+	height: 70px;
+	text-align: right;
+	font-size: 30px;
+	color:#4c455a;
+	overflow: hidden;
+	z-index: 1;
+
+	&:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+//buttons
+.buttons{
+
+	&:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	& button{
+		float: right;
+		border: 1px solid transparent;
+		background: transparent;
+		color:#fff;
+		padding: 15px 10px;
+		outline: none;
+		border-radius: 10%;
+		font-size: 17px;
+		text-shadow:0 2px 1px rgba(0,0,0,.3);
+
+		&:hover{
+			background: rgba(255,255,255,.1);
+		}
+
+		&:active,&.active{
+			background: rgba(255,255,255,.2);
+		}
+	}
+	
+	& .numbers{
+		float: left;
+		width: 75%;
+		padding: 10px;
+
+		& button{
+			width: 33.3333%;
+			padding: 18px 10px;
+		}
+	}
+
+	& .operators{
+		float: right;
+		width: 25%;
+		padding: 16px 10px 10px;
+		background: rgba(0,0,0,.1);
+		height: 260px;
+
+		& button{
+			width: 100%;
+			padding: 11px 10px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
